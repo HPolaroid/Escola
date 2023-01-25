@@ -1,0 +1,69 @@
+body{
+    background-color: green;
+}
+.quadro{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 98%;
+    top: 5%;
+}
+
+iframe{
+    position: absolute;
+    background-color: white;
+    top: 13%;
+    height: 70%;
+    width: 70%;
+    left: 15%;
+}
+.prin{
+   position: absolute;
+   width: 100%;
+   left: 0%;
+   height: 98%;
+   top: 0%;
+}
+.BB{
+    position: absolute;
+   width: 99.5%;
+   left: 0%;
+   height: 80%;
+   top: 8%;
+}
+a:active {
+    color: yellow;
+  }
+.prin ul li{
+    display: inline;
+    border: black;
+}
+.prin ul{
+    max-width: 100%;
+    color: black;
+}
+
+.prin ul li a:link{
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
