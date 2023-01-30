@@ -1,3 +1,4 @@
+
 <?php
 include_once("conexao.php");
 ?>
@@ -10,7 +11,6 @@ include_once("conexao.php");
                                         on curso.cod_curso = turma.cod_curso
                                         WHERE turma.cod_turma like '%$turma%'");
 
-    
     echo "<table border='1'>";
     echo "<tr>";
     echo "<th>Nome do Aluno</th>";

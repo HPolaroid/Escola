@@ -1,0 +1,21 @@
+CREATE TABLE curso(Cod_curso int PRIMARY KEY AUTO_INCREMENT,
+                  Nome_curso varchar(60));
+CREATE TABLE turma(Cod_turma int PRIMARY KEY AUTO_INCREMENT,
+                  Nome_turma varchar(60),
+                  Cod_curso int,
+                  FOREIGN KEY(Cod_curso) REFERENCES curso(Cod_curso));
+CREATE TABLE aluno(Cod_aluno INT PRIMARY KEY AUTO_INCREMENT,
+                   Nome_aluno varchar(60),
+                   CPF varchar(15),
+                   Telefone varchar(11),
+                  	Cod_turma int,
+                  FOREIGN KEY(Cod_turma) REFERENCES turma(Cod_turma));
+
+DELIMITER //
+CREATE TRIGGER tg_insere_nota after INSERT
+on aluno
+for EACH ROW
+BEGIN
+insert into nota(Cod_aluno,Nota)
+VALUES(new.Cod_aluno,nota);
+END //
